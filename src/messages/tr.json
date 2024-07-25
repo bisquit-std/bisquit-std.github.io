@@ -1,0 +1,80 @@
+{
+    "HomePage": {
+        "title": "LifeLink ile Merhaba",
+        "login": "Giriş Yap"
+    },
+    "Login": {
+        "title": "LifeLink",
+        "email": "E-posta",
+        "password": "Şifre",
+        "login": "Giriş",
+        "loginProgress": "Giriş Yapılıyor",
+        "loginSuccessful": "Giriş Başarılı!",
+        "User": {
+            "Conflict": {
+                "LoginError": "Kullanıcı bilgileri yanlış"
+            },
+            "NotFound": {
+                "LoginErrorNotFound": "Bu bilgilere sahip kullanıcı bulunamadı"
+            },
+            "RoleError": "Kullanıcı bir Yönetici değil"
+        }
+    },
+    "Navbar": {
+        "navigation": "Navigasyon",
+        "dashboard": "Bilgi Paneli",
+        "profile": "Profil",
+        "evacPersons": "Tahliye Kişileri",
+        "evacPersonList": "Tahliye Kişileri Listesi",
+        "fieldOperators": "Saha Operatörleri",
+        "fieldOperatorList": "Saha Operatörü Listesi",
+        "assignFieldOperator": "Saha Operatörü Ataması",
+        "changeLanguage": "English"
+    },
+    "Profile": {
+        "name": "İsim",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "birthday": "Doğum Günü",
+        "signOut": "Çıkış Yap"
+    },
+    "Dashboard": {
+        "dashboard": "Bilgi Paneli"
+    },
+    "EvacPerson": {
+        "name": "Ad Soyad",
+        "age": "Yaş",
+        "birthday": "Doğum Tarihi",
+        "illnesses": "Hastalıklar",
+        "medications": "İlaçlar",
+        "specialNeeds": "Özel İhtiyaçlar",
+        "prostheses": "Protezler",
+        "description": "Açıklama",
+        "location": "Konum",
+        "locationNote": "Konum Notu",
+        "assignedOperators": "Atanan Operatörler",
+        "status": "Durum",
+        "actions": "Aksiyonlar",
+        "assignFieldOperator": "Tahliye Kişisi Ataması",
+        "Assign": {
+            "assign": "Atama Yap",
+            "evacPerson": "Tahliye Kişisi",
+            "fieldOperator": "Saha Operatörü",
+            "chooseEvacPerson": "Tahliye Kişisi Seçiniz",
+            "chooseFieldOperator": "Saha Operatörü Seçiniz",
+            "assignSuccessful": "Saha Operatörü başarıyla atandı",
+            "removeSuccessful": "Saha Operatörü başarıyla kaldırıldı"
+        }
+    },
+    "FieldOperator": {
+        "name": "Ad Soyad",
+        "birthday": "Doğum Tarihi",
+        "location": "Konum",
+        "locationNote": "Konum Notu",
+        "assignedEvacPersons": "Atanan Tahliye Kişileri",
+        "status": "Durum"
+    },
+    "ComboBox": {
+        "select": "Seçiniz"
+    }
+}

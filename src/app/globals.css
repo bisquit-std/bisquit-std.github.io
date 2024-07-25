@@ -1,0 +1,31 @@
+:root {
+    --foreground: #2c2c2c;
+    --foregroundHalf: #2c2c2ce6;
+    --background: #f1f1f1;
+    --backgroundHalf: #f1f1f1e6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+}
+
+a {
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 1rem;
+}
