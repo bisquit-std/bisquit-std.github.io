@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
+import Error from "next/error";
 
-const NotFound = () => {
-    return <div>NotFound</div>;
-};
-
-export default NotFound;
+export default function NotFound() {
+    return (
+        <html lang="en">
+            <body>
+                <Error statusCode={404} />
+            </body>
+        </html>
+    );
+}

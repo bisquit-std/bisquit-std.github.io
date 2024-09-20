@@ -5,11 +5,11 @@
         "es": "Español"
     },
     "Theme": {
-        "darkMode": "Karanlık Tema",
-        "lightMode": "Aydınlık Tema"
+        "darkMode": "Modo oscuro",
+        "lightMode": "Modo claro"
     },
     "Common": {
-        "welcome": "Hoş geldin",
-        "goodbye": "Hoşçakal"
+        "welcome": "Bienvenido",
+        "goodbye": "Adiós"
     }
 }

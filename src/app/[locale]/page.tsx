@@ -1,16 +1,17 @@
-import { Link } from "../../navigation";
-import styles from "./page.module.css";
-import { useTranslations } from "next-intl";
+import About from "@/components/homePage/about";
+import Contact from "@/components/homePage/contact";
+import Portfolio from "@/components/homePage/portfolio";
+import Welcome from "@/components/homePage/welcome";
+import WhatWeDo from "@/components/homePage/whatWeDo";
 
 export default function Home() {
-    const t = useTranslations("HomePage");
-
     return (
-        <main className={styles.container}>
-            <p className={styles.title}>{t("title")}</p>
-            <Link href={"/login"} className={styles.loginButton}>
-                {t("login")}
-            </Link>
+        <main className="flex flex-col">
+            <Welcome />
+            <About />
+            <WhatWeDo />
+            <Portfolio />
+            <Contact />
         </main>
     );
 }

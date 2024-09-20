@@ -1,0 +1,17 @@
+[
+    {
+        "id": "x",
+        "size": 20,
+        "url": "https://www.x.com"
+    },
+    {
+        "id": "linkedin",
+        "size": 20,
+        "url": "https://www.linkedin.com"
+    },
+    {
+        "id": "youtube",
+        "size": 24,
+        "url": "https://www.youtube.com"
+    }
+]

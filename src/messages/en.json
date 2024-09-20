@@ -1,80 +1,29 @@
 {
+    "Locale": {
+        "en": "English",
+        "tr": "Türkçe",
+        "es": "Español"
+    },
+    "Theme": {
+        "darkMode": "Dark Mode",
+        "lightMode": "Light Mode"
+    },
+    "Common": {
+        "welcome": "Welcome",
+        "goodbye": "Good Bye",
+        "Navbar": {
+            "home": "Home",
+            "about": "About Us",
+            "whatWeDo": "What We Do",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        }
+    },
     "HomePage": {
-        "title": "Hello From LifeLink",
-        "login": "Login"
-    },
-    "Login": {
-        "title": "LifeLink",
-        "email": "Email",
-        "password": "Password",
-        "login": "Login",
-        "loginProgress": "Logging In",
-        "loginSuccessful": "Login Successful!",
-        "User": {
-            "Conflict": {
-                "LoginError": "User credentials are wrong"
-            },
-            "NotFound": {
-                "LoginErrorNotFound": "User with this credentials not found"
-            },
-            "RoleError": "The user is not an Admin"
-        }
-    },
-    "Navbar": {
-        "navigation": "Navigation",
-        "dashboard": "Dashboard",
-        "profile": "Profile",
-        "evacPersons": "Evacuation Persons",
-        "evacPersonList": "Evacuation Person List",
-        "fieldOperators": "Field Operators",
-        "fieldOperatorList": "Field Operator List",
-        "assignFieldOperator": "Assign Field Operator",
-        "changeLanguage": "Türkçe"
-    },
-    "Profile": {
-        "name": "Name",
-        "email": "Email",
-        "phone": "Phone",
-        "birthday": "Birthday",
-        "signOut": "Sign Out"
-    },
-    "Dashboard": {
-        "dashboard": "Dashboard"
-    },
-    "EvacPerson": {
-        "name": "Name",
-        "age": "Age",
-        "birthday": "Birthday",
-        "illnesses": "Illnesses",
-        "medications": "Medications",
-        "specialNeeds": "Special Needs",
-        "prostheses": "Prostheses",
-        "description": "Description",
-        "location": "Location",
-        "locationNote": "Location Note",
-        "assignedOperators": "Assigned Operators",
-        "status": "Status",
-        "actions": "Actions",
-        "assignFieldOperator": "Assign field operator",
-        "Assign": {
-            "assign": "Assign",
-            "evacPerson": "Evacuation Person",
-            "fieldOperator": "Field Operator",
-            "chooseEvacPerson": "Please choose an Evacuation Person",
-            "chooseFieldOperator": "Please choose a Field Operator",
-            "assignSuccessful": "Field Operator successfully assigned",
-            "removeSuccessful": "Field Operator removed successfully"
-        }
-    },
-    "FieldOperator": {
-        "name": "Name",
-        "birthday": "Birthday",
-        "location": "Location",
-        "locationNote": "Location Note",
-        "assignedEvacPersons": "Assigned Evac Persons",
-        "status": "Status"
-    },
-    "ComboBox": {
-        "select": "Select an option"
+        "innovativeSolutions": "Innovative Solutions",
+        "seamlessIntegration": "Seamless Integration",
+        "scalableGrowth": "Scalable Growth",
+        "optimizedEfficiency": "Optimized Efficiency",
+        "learnMore": "Learn More About Us"
     }
 }
