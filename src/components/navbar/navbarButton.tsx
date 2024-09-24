@@ -17,31 +17,48 @@ export default function NavbarButton({ id }: { id: string }) {
         }
     };
 
-    useEffect(() => {
-        const handleIntersection = (entries: IntersectionObserverEntry[]) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setActiveSection(entry.target.id);
+    const waitForSections = async () => {
+        return new Promise<HTMLElement[]>((resolve) => {
+            const interval = setInterval(() => {
+                const sections = document.querySelectorAll("section");
+                if (sections.length > 0) {
+                    clearInterval(interval);
+                    resolve(Array.from(sections) as HTMLElement[]);
                 }
-            });
-        };
-
-        const observer = new IntersectionObserver(handleIntersection, {
-            threshold: 0.5,
+            }, 100);
         });
+    };
 
-        const sections = document.querySelectorAll("section");
-        sections.forEach((section) => observer.observe(section));
+    useEffect(() => {
+        const setupObserver = async () => {
+            const sections = await waitForSections();
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            setActiveSection(entry.target.id);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.5,
+                }
+            );
 
-        return () => {
-            sections.forEach((section) => observer.unobserve(section));
+            sections.forEach((section) => observer.observe(section));
+
+            return () => {
+                sections.forEach((section) => observer.unobserve(section));
+            };
         };
+
+        setupObserver();
     }, []);
 
     return (
         <button
             className={`hover:text-tertiary duration-150 ${
-                activeSection === id ? "text-tertiary" : "text-default"
+                activeSection === id ? "text-tertiary" : "text-text"
             }`}
             onClick={() => scrollToSection()}
         >

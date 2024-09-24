@@ -1,7 +1,7 @@
 [
     { "id": "home" },
     { "id": "about" },
-    { "id": "whatWeDo" },
+    { "id": "services" },
     { "id": "portfolio" },
     { "id": "contact" }
 ]

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "web",
+        "size": 32,
+        "info": "webInfo"
+    },
+    {
+        "title": "mobile",
+        "size": 32,
+        "info": "mobileInfo"
+    },
+    {
+        "title": "projects",
+        "size": 32,
+        "info": "projectsInfo"
+    },
+    {
+        "title": "backend",
+        "size": 30,
+        "info": "backendInfo"
+    },
+    {
+        "title": "software",
+        "size": 32,
+        "info": "softwareInfo"
+    },
+    {
+        "title": "cloud",
+        "size": 32,
+        "info": "cloudInfo"
+    }
+]

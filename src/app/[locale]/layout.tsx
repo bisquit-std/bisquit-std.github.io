@@ -3,7 +3,8 @@ import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "./globals.css";
-import Navbar from "@/components/navbar/navbar";
+import { Toaster } from "react-hot-toast";
+import ThemeLoader from "@/components/themeLoader";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -28,8 +29,21 @@ export default async function RootLayout({
         <html lang={locale}>
             <body className={poppins.className}>
                 <NextIntlClientProvider messages={messages}>
-                    <Navbar />
+                    <Toaster
+                        position="top-right"
+                        toastOptions={{
+                            style: {
+                                background: "var(--primary)",
+                                color: "var(--text)",
+                                paddingLeft: "20px",
+                                paddingRight: "20px",
+                                paddingTop: "12px",
+                                paddingBlock: "12px",
+                            },
+                        }}
+                    />
                     {children}
+                    <ThemeLoader />
                 </NextIntlClientProvider>
             </body>
         </html>

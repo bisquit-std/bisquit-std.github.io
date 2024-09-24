@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 enum Themes {
     LIGHT = "light",
@@ -20,7 +20,7 @@ export function useTheme() {
     };
 
     // set the theme based on system preference or stored user preference
-    useEffect(() => {
+    useLayoutEffect(() => {
         // check localStorage for a saved theme
         const savedTheme = localStorage.getItem("theme") as Themes | null;
 
@@ -39,7 +39,7 @@ export function useTheme() {
         );
     }, []);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
         // only react to system changes if the user hasn't set a theme manually

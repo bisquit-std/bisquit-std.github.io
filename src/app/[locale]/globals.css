@@ -9,6 +9,7 @@
     --secondary-light: #c6ced6;
     --tertiary-light: #22a7a8;
     --text-light: #354554;
+    --bg-svg-light: url("../../../public/images/bg-light.svg");
 
     /* dark values */
     --background-dark: #354554;
@@ -16,6 +17,7 @@
     --secondary-dark: #2a3948;
     --tertiary-dark: #22a7a8;
     --text-dark: #d6dbdc;
+    --bg-svg-dark: url("../../../public/images/bg-dark.svg");
 
     /* initiate light values */
     --background: var(--background-light);
@@ -23,6 +25,7 @@
     --secondary: var(--secondary-light);
     --tertiary: var(--tertiary-light);
     --text: var(--text-light);
+    --bg-svg: var(--bg-svg-light);
 }
 
 .dark {
@@ -32,6 +35,7 @@
     --secondary: var(--secondary-dark);
     --tertiary: var(--tertiary-dark);
     --text: var(--text-dark);
+    --bg-svg: var(--bg-svg-dark);
 }
 
 * {
@@ -71,25 +75,182 @@ select {
     }
 }
 
-.homeButton {
-    font: inherit;
-    background-color: #f0f0f0;
-    border: 0;
-    color: #242424;
-    border-radius: 0.5em;
-    font-size: 1.25rem;
-    padding: 0.375em 1em;
-    font-weight: 400;
-    text-shadow: 0 0.0625em 0 #fff;
-    box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
-        0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
-        0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
-    transition: 0.15s ease;
+/* social colors */
+:root {
+    --x: #000000;
+    --linkedin: #0077b5;
+    --youtube: #ff0000;
+    --facebook: #4267b2;
 }
 
-.homeButton:active {
-    translate: 0 0.225em;
-    box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
-        0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
-        0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+/* welcome background image */
+.background {
+    background-image: var(--bg-svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* welcome button */
+:root {
+    --shadow-1-light: rgb(233, 235, 239);
+    --shadow-2-light: rgb(228, 230, 234);
+    --shadow-3-light: rgb(223, 225, 229);
+    --shadow-4-light: rgb(213, 215, 219);
+    --shadow-5-light: rgb(208, 210, 214);
+    --shadow-6-light: rgb(203, 205, 209);
+    --shadow-7-light: rgb(193, 195, 199);
+    --shadow-8-light: rgb(198, 200, 204);
+
+    --shadow-1-dark: rgb(42, 55, 72);
+    --shadow-2-dark: rgb(39, 51, 65);
+    --shadow-3-dark: rgb(36, 46, 58);
+    --shadow-4-dark: rgb(30, 39, 51);
+    --shadow-5-dark: rgb(27, 36, 47);
+    --shadow-6-dark: rgb(25, 34, 43);
+    --shadow-7-dark: rgb(22, 30, 39);
+    --shadow-8-dark: rgb(20, 28, 36);
+
+    --shadow-1: var(--shadow-1-light);
+    --shadow-2: var(--shadow-2-light);
+    --shadow-3: var(--shadow-3-light);
+    --shadow-4: var(--shadow-4-light);
+    --shadow-5: var(--shadow-5-light);
+    --shadow-6: var(--shadow-6-light);
+    --shadow-7: var(--shadow-7-light);
+    --shadow-8: var(--shadow-8-light);
+}
+
+.dark {
+    --shadow-1: var(--shadow-1-dark);
+    --shadow-2: var(--shadow-2-dark);
+    --shadow-3: var(--shadow-3-dark);
+    --shadow-4: var(--shadow-4-dark);
+    --shadow-5: var(--shadow-5-dark);
+    --shadow-6: var(--shadow-6-dark);
+    --shadow-7: var(--shadow-7-dark);
+    --shadow-8: var(--shadow-8-dark);
+}
+
+.welcomeButton {
+    font: inherit;
+    background-color: var(--primary);
+    border: 0;
+    color: var(--text);
+    border-radius: 0.5em;
+    font-size: 1.15rem;
+    padding: 0.375em 1em;
+    font-weight: 400;
+    text-shadow: 0 0.0625em 0 var(--secondary);
+    box-shadow: inset 0 0.0625em 0 0 var(--shadow-1),
+        0 0.0625em 0 0 var(--shadow-2), 0 0.125em 0 0 var(--shadow-3),
+        0 0.25em 0 0 var(--shadow-4), 0 0.3125em 0 0 var(--shadow-5),
+        0 0.375em 0 0 var(--shadow-6), 0 0.425em 0 0 var(--shadow-7),
+        0 0.425em 0.5em 0 var(--text);
+
+    transition: color 300ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.welcomeButton:active {
+    transform: translate(0, 0.225em);
+    box-shadow: inset 0 0.03em 0 0 var(--shadow-1), 0 0.03em 0 0 var(--shadow-2),
+        0 0.0625em 0 0 var(--shadow-3), 0 0.125em 0 0 var(--shadow-4),
+        0 0.125em 0 0 var(--shadow-5), 0 0.2em 0 0 var(--shadow-6),
+        0 0.225em 0 0 var(--shadow-7), 0 0.225em 0.375em var(--text);
+}
+
+/* contactButton */
+.contactButton {
+    border: 3px solid var(--tertiary);
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: var(--tertiary);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.contactButton:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: var(--tertiary);
+    z-index: -1;
+}
+
+.contactButton:hover {
+    color: var(--background);
+}
+
+.contactButton:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.contactButton:active {
+    transform: scale(0.9);
+}
+
+/* loading icon */
+.spinner {
+    width: 44px;
+    height: 44px;
+    animation: spinner-y0fdc1 2s infinite ease;
+    transform-style: preserve-3d;
+}
+
+.spinner > div {
+    background-color: var(--secondary);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid var(--primary);
+}
+
+.spinner div:nth-of-type(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
 }

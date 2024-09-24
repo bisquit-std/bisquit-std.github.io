@@ -1,0 +1,12 @@
+[
+    {
+        "title": "phone",
+        "size": 32,
+        "info": "+90 (555) 555 55 00"
+    },
+    {
+        "title": "email",
+        "size": 32,
+        "info": "bisquitstd@gmail.com"
+    }
+]

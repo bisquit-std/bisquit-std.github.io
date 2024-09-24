@@ -23,8 +23,9 @@ export default function Welcome() {
             id="home"
             className="ml-64 flex flex-col min-h-screen items-center justify-center"
         >
-            <p className="text-2xl font-medium">{t("Common.welcome")}</p>
-            <div className="text-5xl mt-1 mb-16">
+            <div className="fixed w-screen h-screen -z-10 background" />
+            <p className="text-2xl font-medium -mb-1">{t("Common.welcome")}</p>
+            <div className="text-6xl h-16">
                 <Typewriter
                     options={{
                         strings: TypistWords.map((x) => t(`HomePage.${x}`)),
@@ -35,12 +36,17 @@ export default function Welcome() {
                     }}
                 />
             </div>
-            <button
-                className="hover:text-tertiary duration-150 homeButton"
-                onClick={() => scrollToSection()}
-            >
-                {t("HomePage.learnMore")}
-            </button>
+            <p className="mt-5 mb-16 opacity-90 text-lg font-light">
+                {t("HomePage.motto2")}
+            </p>
+            <div className="px-8 pt-5 pb-7 rounded-md">
+                <button
+                    className="hover:text-tertiary welcomeButton"
+                    onClick={() => scrollToSection()}
+                >
+                    {t("HomePage.learnMore")}
+                </button>
+            </div>
         </section>
     );
 }
