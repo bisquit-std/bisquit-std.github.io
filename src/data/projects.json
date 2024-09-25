@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Game Hub",
+        "type": {
+            "en": "Game Publisher Website",
+            "tr": "",
+            "es": ""
+        },
+        "description": {
+            "en": "This is the offical website of theDigital Tribe Games. They are a dynamic game development studio specializing in creating immersive and engaging gaming experiences. Known for their innovative design and storytelling, the studio focuses on developing diverse genres of games that captivate players. With a commitment to high-quality graphics, compelling gameplay, and user-centered design.",
+            "tr": "",
+            "es": ""
+        },
+        "technologies": [
+            "Next.js",
+            "TypeScript",
+            "Tailwind",
+            "CSS",
+            "Firebase"
+        ],
+        "platforms": ["Web"],
+        "url": "https://digitaltribegames.com",
+        "imageCount": 9,
+        "coverType": "16/9",
+        "imageType": "16/9"
+    }
+]

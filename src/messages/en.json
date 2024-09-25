@@ -9,21 +9,83 @@
         "lightMode": "Light Mode"
     },
     "Common": {
+        "company": "BisQuit",
         "welcome": "Welcome",
         "goodbye": "Good Bye",
         "Navbar": {
             "home": "Home",
             "about": "About Us",
-            "whatWeDo": "What We Do",
+            "services": "What We Do",
             "portfolio": "Portfolio",
             "contact": "Contact"
-        }
+        },
+        "name": "Name",
+        "email": "Email",
+        "message": "Your Message",
+        "submit": "Submit",
+        "all": "All",
+        "web": "Web",
+        "mobile": "Mobile",
+        "backend": "Backend",
+        "description": "Description",
+        "type": "Type",
+        "technologies": "Technologies",
+        "platform": "Platform",
+        "platforms": "Platforms",
+        "checkOut": "Check Out"
     },
     "HomePage": {
         "innovativeSolutions": "Innovative Solutions",
         "seamlessIntegration": "Seamless Integration",
         "scalableGrowth": "Scalable Growth",
         "optimizedEfficiency": "Optimized Efficiency",
-        "learnMore": "Learn More About Us"
+
+        "motto": "We have the solution for your next problem.",
+        "motto2": "Baking the future of business, one solution at a time.",
+        "learnMore": "Get to Know Us"
+    },
+    "About": {
+        "title": "ABOUT US",
+        "subTitle": "Know Us More",
+        "we're": "We're",
+        "info": "Welcome to BisQuit, your trusted partner in innovative software solutions. We specialize in crafting tailored software that empowers businesses to thrive in an ever-evolving digital landscape. Whether you're looking to optimize operations, enhance customer engagement, or drive growth, BisQuit delivers custom solutions that align perfectly with your business needs.<br/><br/>Our team of experienced developers, designers, and strategists is dedicated to turning your vision into reality. We believe in the power of collaboration and work closely with our clients to understand their unique challenges and opportunities. This collaborative approach allows us to create software that not only meets but exceeds expectations, ensuring your company stays ahead of the competition.",
+        "years": "Years Experience",
+        "clients": "Happy Clients",
+        "sadClients": "Sad Clients",
+        "projects": "Projects Done"
+    },
+    "Services": {
+        "title": "SERVICES",
+        "subTitle": "What We Do?",
+        "web": "Web Development",
+        "webInfo": "Design and build websites that blend stunning visuals with seamless functionality to enhance user engagement.",
+        "mobile": "Mobile App Development",
+        "mobileInfo": "Create intuitive mobile apps for iOS and Android, tailored to your business and customer needs.",
+        "projects": "Full-Stack Projects",
+        "projectsInfo": "Deliver solutions that include both front-end and back-end development using the latest technologies.",
+        "backend": "API Development & Integration",
+        "backendInfo": "Develop custom software to streamline operations, enhance productivity, and support unique workflows.",
+        "software": "Enterprise Software Solutions",
+        "softwareInfo": "Design secure APIs for smooth integration with third-party services, ensuring seamless data flow.",
+        "cloud": "Cloud-Based Applications",
+        "cloudInfo": "Provide scalable cloud services that support growth, improve performance, and ensure secure remote access."
+    },
+    "Portfolio": {
+        "title": "PORTFOLIO",
+        "subTitle": "Our Work"
+    },
+    "Contact": {
+        "title": "CONTACT",
+        "subTitle": "Get in Touch",
+        "reachUs": "REACH US",
+        "followUs": "FOLLOW US",
+        "allFieldsNeeded": "Please fill in all fields.",
+        "validEmail": "Please enter a valid Email.",
+        "messageLength": "Please enter a message with at least 10 characters.",
+        "sending": "Sending...",
+        "messageSent": "Your message has been sent successfully.",
+        "messageError": "There was an error while sending the message.",
+        "phoneCopy": "Phone number copied",
+        "rights": "All Rights Reserved"
     }
 }

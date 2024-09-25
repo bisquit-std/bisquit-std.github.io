@@ -22,6 +22,10 @@ const config: Config = {
                 secondary: "var(--secondary)",
                 tertiary: "var(--tertiary)",
                 text: "var(--text)",
+                x: "var(--x)",
+                linkedin: "var(--linkedin)",
+                youtube: "var(--youtube)",
+                facebook: "var(--facebook)",
             },
             borderColor: {
                 background: "var(--background)",
