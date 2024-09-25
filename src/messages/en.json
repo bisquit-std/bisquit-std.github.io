@@ -26,7 +26,13 @@
         "all": "All",
         "web": "Web",
         "mobile": "Mobile",
-        "backend": "Backend"
+        "backend": "Backend",
+        "description": "Description",
+        "type": "Type",
+        "technologies": "Technologies",
+        "platform": "Platform",
+        "platforms": "Platforms",
+        "checkOut": "Check Out"
     },
     "HomePage": {
         "innovativeSolutions": "Innovative Solutions",

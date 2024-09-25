@@ -4,8 +4,16 @@ import { FirebaseBaseService } from "./FirebaseBaseService";
 export interface Project {
     id: string;
     title: string;
-    type: string;
-    description: string;
+    type: {
+        en: string;
+        tr: string;
+        es: string;
+    };
+    description: {
+        en: string;
+        tr: string;
+        es: string;
+    };
     technologies: string[];
     platforms: string[];
     url?: string;
@@ -16,8 +24,16 @@ export interface Project {
 
 interface CreateProject {
     title: string;
-    type: string;
-    description: string;
+    type: {
+        en: string;
+        tr: string;
+        es: string;
+    };
+    description: {
+        en: string;
+        tr: string;
+        es: string;
+    };
     technologies: string[];
     platforms: string[];
     url?: string;

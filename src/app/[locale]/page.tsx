@@ -9,7 +9,11 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer";
 import { ProjectService } from "@/services/projectService";
 
-export default async function Home() {
+export default async function Home({
+    params: { locale },
+}: {
+    params: { locale: string };
+}) {
     const projectService = new ProjectService();
 
     const projects = await projectService.getAll();
@@ -20,7 +24,7 @@ export default async function Home() {
             <Welcome />
             <About />
             <Services />
-            <Portfolio projects={projects} />
+            <Portfolio projects={projects} locale={locale} />
             <Contact />
             <Footer />
         </main>

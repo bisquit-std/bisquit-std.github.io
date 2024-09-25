@@ -5,11 +5,86 @@
         "es": "Español"
     },
     "Theme": {
-        "darkMode": "Karanlık Tema",
-        "lightMode": "Aydınlık Tema"
+        "darkMode": "Karanlık Mod",
+        "lightMode": "Aydınlık Mod"
     },
     "Common": {
-        "welcome": "Hoş geldin",
-        "goodbye": "Hoşçakal"
+        "company": "BisQuit",
+        "welcome": "Hoşgeldiniz",
+        "goodbye": "Hoşçakal",
+        "Navbar": {
+            "home": "Ana Sayfa",
+            "about": "Hakkımızda",
+            "services": "Hizmetlerimiz",
+            "portfolio": "Portföy",
+            "contact": "İletişim"
+        },
+        "name": "İsim",
+        "email": "E-posta",
+        "message": "Mesajınız",
+        "submit": "Gönder",
+        "all": "Tümü",
+        "web": "Web",
+        "mobile": "Mobil",
+        "backend": "Backend",
+        "description": "Açıklama",
+        "type": "Tür",
+        "technologies": "Teknolojiler",
+        "platform": "Platform",
+        "platforms": "Platformlar",
+        "checkOut": "İncele"
+    },
+    "HomePage": {
+        "innovativeSolutions": "Yenilikçi Çözümler",
+        "seamlessIntegration": "Sorunsuz Entegrasyon",
+        "scalableGrowth": "Ölçeklenebilir Büyüme",
+        "optimizedEfficiency": "Optimize Edilmiş Verimlilik",
+        "motto": "Bir sonraki probleminiz için çözümümüz var.",
+        "motto2": "Geleceği çözümlerle pişiriyoruz.",
+        "learnMore": "Bizi Tanıyın"
+    },
+    "About": {
+        "title": "HAKKIMIZDA",
+        "subTitle": "Bizi Daha İyi Tanıyın",
+        "we're": "Biz",
+        "info": "BisQuit'e hoş geldiniz, yenilikçi yazılım çözümlerinde güvenilir ortağınız. Dijital dünyanın hızla değişen dinamiklerinde işletmenizi güçlendiren özel yazılımlar geliştiriyoruz. İster operasyonları optimize etmek, ister müşteri etkileşimini artırmak veya büyümeyi hızlandırmak isteyin, BisQuit tam ihtiyacınıza uygun çözümler sunar.<br/><br/>Deneyimli geliştirici, tasarımcı ve stratejist ekibimiz, vizyonunuzu gerçeğe dönüştürmek için burada. İş birliği gücüne inanıyor ve müşterilerimizle yakından çalışarak onların benzersiz zorluklarını ve fırsatlarını anlıyoruz. Bu işbirliği yaklaşımı, sadece beklentilerinizi karşılamakla kalmaz, aynı zamanda aşar, böylece şirketiniz rekabette öne çıkar.",
+        "years": "Yıllık Deneyim",
+        "clients": "Mutlu Müşteriler",
+        "sadClients": "Mutsuz Müşteriler",
+        "projects": "Tamamlanan Projeler"
+    },
+    "Services": {
+        "title": "HİZMETLER",
+        "subTitle": "Neler Yapıyoruz?",
+        "web": "Web Geliştirme",
+        "webInfo": "Kullanıcı etkileşimini artırmak için göz alıcı görseller ve kusursuz işlevselliği bir araya getiren web siteleri tasarlayın ve oluşturun.",
+        "mobile": "Mobil Uygulama Geliştirme",
+        "mobileInfo": "İşletmenize ve müşteri ihtiyaçlarınıza uygun, iOS ve Android için sezgisel mobil uygulamalar oluşturun.",
+        "projects": "Full-Stack Projeler",
+        "projectsInfo": "En son teknolojileri kullanarak hem ön uç hem de arka uç geliştirmeyi içeren çözümler sunun.",
+        "backend": "API Geliştirme ve Entegrasyon",
+        "backendInfo": "Operasyonları kolaylaştırmak, verimliliği artırmak ve benzersiz iş akışlarını desteklemek için özel yazılımlar geliştirin.",
+        "software": "Kurumsal Yazılım Çözümleri",
+        "softwareInfo": "Üçüncü taraf hizmetlerle sorunsuz veri akışını sağlamak için güvenli API'ler tasarlayın.",
+        "cloud": "Bulut Tabanlı Uygulamalar",
+        "cloudInfo": "Büyümeyi destekleyen, performansı artıran ve güvenli uzaktan erişim sağlayan ölçeklenebilir bulut hizmetleri sunun."
+    },
+    "Portfolio": {
+        "title": "PORTFÖY",
+        "subTitle": "Çalışmalarımız"
+    },
+    "Contact": {
+        "title": "İLETİŞİM",
+        "subTitle": "Bizimle İletişime Geçin",
+        "reachUs": "BİZE ULAŞIN",
+        "followUs": "BİZİ TAKİP EDİN",
+        "allFieldsNeeded": "Lütfen tüm alanları doldurun.",
+        "validEmail": "Lütfen geçerli bir e-posta adresi girin.",
+        "messageLength": "Lütfen en az 10 karakterden oluşan bir mesaj girin.",
+        "sending": "Gönderiliyor...",
+        "messageSent": "Mesajınız başarıyla gönderildi.",
+        "messageError": "Mesaj gönderilirken bir hata oluştu.",
+        "phoneCopy": "Telefon numarası kopyalandı",
+        "rights": "Tüm Hakları Saklıdır"
     }
 }

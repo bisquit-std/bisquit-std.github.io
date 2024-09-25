@@ -9,6 +9,7 @@ import { StorageService } from "@/services/imageService";
 interface Props {
     projects: Project[];
     activeProjects: string[];
+    locale: string;
 }
 
 const cardVariants = {
@@ -32,7 +33,7 @@ const cardVariants = {
     },
 };
 
-const MasonryGrid = ({ projects, activeProjects }: Props) => {
+const MasonryGrid = ({ projects, activeProjects, locale }: Props) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
     const [positions, setPositions] = useState<{ left: number; top: number }[]>(
         []
@@ -135,7 +136,11 @@ const MasonryGrid = ({ projects, activeProjects }: Props) => {
                                     {x.title}
                                 </p>
                                 <p className="text-white font-light">
-                                    {x.type}
+                                    {
+                                        x.type[
+                                            locale as keyof typeof x.description
+                                        ]
+                                    }
                                 </p>
                             </div>
                         </motion.div>

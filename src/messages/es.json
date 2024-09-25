@@ -9,7 +9,82 @@
         "lightMode": "Modo claro"
     },
     "Common": {
+        "company": "BisQuit",
         "welcome": "Bienvenido",
-        "goodbye": "Adiós"
+        "goodbye": "Adiós",
+        "Navbar": {
+            "home": "Inicio",
+            "about": "Sobre Nosotros",
+            "services": "Qué Hacemos",
+            "portfolio": "Portafolio",
+            "contact": "Contacto"
+        },
+        "name": "Nombre",
+        "email": "Correo Electrónico",
+        "message": "Tu Mensaje",
+        "submit": "Enviar",
+        "all": "Todo",
+        "web": "Web",
+        "mobile": "Móvil",
+        "backend": "Backend",
+        "description": "Descripción",
+        "type": "Tipo",
+        "technologies": "Tecnologías",
+        "platform": "Plataforma",
+        "platforms": "Plataformas",
+        "checkOut": "Ver"
+    },
+    "HomePage": {
+        "innovativeSolutions": "Soluciones Innovadoras",
+        "seamlessIntegration": "Integración Perfecta",
+        "scalableGrowth": "Crecimiento Escalable",
+        "optimizedEfficiency": "Eficiencia Optimizada",
+        "motto": "Tenemos la solución para tu próximo problema.",
+        "motto2": "Cocinando el futuro de los negocios, una solución a la vez.",
+        "learnMore": "Conócenos"
+    },
+    "About": {
+        "title": "SOBRE NOSOTROS",
+        "subTitle": "Conócenos Más",
+        "we're": "Somos",
+        "info": "Bienvenido a BisQuit, tu socio de confianza en soluciones de software innovadoras. Nos especializamos en desarrollar software personalizado que empodera a las empresas para prosperar en un entorno digital en constante evolución. Ya sea que busques optimizar operaciones, mejorar la interacción con los clientes o impulsar el crecimiento, BisQuit ofrece soluciones personalizadas que se alinean perfectamente con las necesidades de tu negocio.<br/><br/>Nuestro equipo de desarrolladores, diseñadores y estrategas experimentados está dedicado a convertir tu visión en realidad. Creemos en el poder de la colaboración y trabajamos en estrecha colaboración con nuestros clientes para comprender sus desafíos y oportunidades únicos. Este enfoque colaborativo nos permite crear software que no solo cumple, sino que supera las expectativas, asegurando que tu empresa se mantenga por delante de la competencia.",
+        "years": "Años de Experiencia",
+        "clients": "Clientes Felices",
+        "sadClients": "Clientes Insatisfechos",
+        "projects": "Proyectos Realizados"
+    },
+    "Services": {
+        "title": "SERVICIOS",
+        "subTitle": "¿Qué Hacemos?",
+        "web": "Desarrollo Web",
+        "webInfo": "Diseña y construye sitios web que combinen visuales impresionantes con una funcionalidad perfecta para mejorar la participación del usuario.",
+        "mobile": "Desarrollo de Aplicaciones Móviles",
+        "mobileInfo": "Crea aplicaciones móviles intuitivas para iOS y Android, adaptadas a las necesidades de tu negocio y clientes.",
+        "projects": "Proyectos Full-Stack",
+        "projectsInfo": "Ofrecemos soluciones que incluyen tanto el desarrollo front-end como back-end utilizando las tecnologías más recientes.",
+        "backend": "Desarrollo e Integración de API",
+        "backendInfo": "Desarrollamos software personalizado para optimizar operaciones, mejorar la productividad y apoyar flujos de trabajo únicos.",
+        "software": "Soluciones de Software Empresarial",
+        "softwareInfo": "Diseñamos APIs seguras para una integración fluida con servicios de terceros, garantizando un flujo de datos continuo.",
+        "cloud": "Aplicaciones Basadas en la Nube",
+        "cloudInfo": "Ofrecemos servicios en la nube escalables que soportan el crecimiento, mejoran el rendimiento y aseguran el acceso remoto seguro."
+    },
+    "Portfolio": {
+        "title": "PORTAFOLIO",
+        "subTitle": "Nuestro Trabajo"
+    },
+    "Contact": {
+        "title": "CONTACTO",
+        "subTitle": "Ponte en Contacto",
+        "reachUs": "CONTÁCTANOS",
+        "followUs": "SÍGUENOS",
+        "allFieldsNeeded": "Por favor, rellena todos los campos.",
+        "validEmail": "Por favor, introduce un correo electrónico válido.",
+        "messageLength": "Por favor, introduce un mensaje de al menos 10 caracteres.",
+        "sending": "Enviando...",
+        "messageSent": "Tu mensaje ha sido enviado con éxito.",
+        "messageError": "Hubo un error al enviar el mensaje.",
+        "phoneCopy": "Número de teléfono copiado",
+        "rights": "Todos los derechos reservados"
     }
 }

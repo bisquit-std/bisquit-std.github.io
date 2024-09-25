@@ -8,9 +8,10 @@ import { Project } from "@/services/projectService";
 
 interface Props {
     projects: Project[];
+    locale: string;
 }
 
-export default function MasonryGridFrame({ projects }: Props) {
+export default function MasonryGridFrame({ projects, locale }: Props) {
     const t = useTranslations("Common");
     const [filter, setFilter] = useState("all");
 
@@ -56,6 +57,7 @@ export default function MasonryGridFrame({ projects }: Props) {
                               .filter((x) => x.platforms.includes(filter))
                               .map((x) => x.id)
                 }
+                locale={locale}
             />
         </div>
     );

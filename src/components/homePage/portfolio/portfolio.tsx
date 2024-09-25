@@ -5,9 +5,10 @@ import { Project } from "@/services/projectService";
 
 interface Props {
     projects: Project[];
+    locale: string;
 }
 
-export default function Portfolio({ projects }: Props) {
+export default function Portfolio({ projects, locale }: Props) {
     const t = useTranslations("Portfolio");
 
     return (
@@ -22,7 +23,7 @@ export default function Portfolio({ projects }: Props) {
                 <p className="text-4xl font-medium z-10">{t("subTitle")}</p>
                 <div className="bg-tertiary h-[3px] w-20 z-10" />
             </div>
-            <MasonryGridFrame projects={projects} />
+            <MasonryGridFrame projects={projects} locale={locale} />
         </section>
     );
 }
