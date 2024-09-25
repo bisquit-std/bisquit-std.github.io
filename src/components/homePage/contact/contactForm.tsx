@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
-import { EMAIL_JS } from "@/constants/secretConstants";
+import { EMAIL_JS } from "@/constants/envConstants";
 
 export default function ContactForm() {
     const t = useTranslations();

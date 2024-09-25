@@ -1,4 +1,4 @@
-import { STORAGE_URL } from "@/constants/secretConstants";
+import { STORAGE_URL } from "@/constants/envConstants";
 
 export const StorageService = {
     url: STORAGE_URL,

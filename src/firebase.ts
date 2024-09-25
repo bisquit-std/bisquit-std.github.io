@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getDownloadURL, getStorage } from "firebase/storage";
-import { FIREBASE_CONFIG } from "./constants/secretConstants";
+import { FIREBASE_CONFIG } from "./constants/envConstants";
 
 const firebaseConfig = FIREBASE_CONFIG;
 

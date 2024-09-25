@@ -4,6 +4,11 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    env: {
+        STORAGE_URL: process.env.STORAGE_URL,
+        FIREBASE_CONFIG: process.env.FIREBASE_CONFIG,
+        EMAIL_JS: process.env.EMAIL_JS,
+    },
     images: {
         remotePatterns: [
             {
