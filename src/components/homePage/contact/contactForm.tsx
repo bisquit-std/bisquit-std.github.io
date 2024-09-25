@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import { useTranslations } from "next-intl";
+import { EMAIL_JS } from "@/constants/secretConstants";
 
 export default function ContactForm() {
     const t = useTranslations();
@@ -48,10 +49,10 @@ export default function ContactForm() {
 
             emailjs
                 .sendForm(
-                    "service_0l7rm1u",
-                    "template_3cstjo4",
+                    EMAIL_JS.serviceId,
+                    EMAIL_JS.templateId,
                     form,
-                    "Ct6NR9M4xjBK_ll0b"
+                    EMAIL_JS.publicKey
                 )
                 .then(() => {
                     form.reset();

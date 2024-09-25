@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import ThemeLoader from "@/components/themeLoader";
+import Footer from "@/components/footer";
 
 const poppins = Poppins({
     subsets: ["latin"],

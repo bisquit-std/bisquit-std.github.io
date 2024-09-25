@@ -1,27 +1,14 @@
 import React from "react";
 import { useTranslations } from "next-intl";
 import MasonryGridFrame from "./masonryGridFrame";
-import { CoverTypes } from "@/constants/constants";
+import { Project } from "@/services/projectService";
 
-export interface Project {
-    id: number;
-    coverType: CoverTypes;
-    type: string[];
+interface Props {
+    projects: Project[];
 }
 
-export default function Portfolio() {
+export default function Portfolio({ projects }: Props) {
     const t = useTranslations("Portfolio");
-
-    const test: Project[] = [
-        { id: 1, coverType: CoverTypes.LANDSCAPE, type: ["web"] },
-        { id: 2, coverType: CoverTypes.PORTRAIT, type: ["mobile"] },
-        { id: 3, coverType: CoverTypes.SQUARE, type: ["mobile"] },
-        { id: 4, coverType: CoverTypes.SQUARE, type: ["web", "backend"] },
-        { id: 5, coverType: CoverTypes.LANDSCAPE, type: ["backend", "mobile"] },
-        { id: 6, coverType: CoverTypes.PORTRAIT, type: ["web", "mobile"] },
-        { id: 7, coverType: CoverTypes.SQUARE, type: ["web"] },
-        { id: 8, coverType: CoverTypes.LANDSCAPE, type: ["backend"] },
-    ];
 
     return (
         <section
@@ -35,7 +22,7 @@ export default function Portfolio() {
                 <p className="text-4xl font-medium z-10">{t("subTitle")}</p>
                 <div className="bg-tertiary h-[3px] w-20 z-10" />
             </div>
-            <MasonryGridFrame projects={test} />
+            <MasonryGridFrame projects={projects} />
         </section>
     );
 }

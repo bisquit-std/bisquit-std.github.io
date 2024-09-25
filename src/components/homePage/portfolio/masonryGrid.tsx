@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
-import { Project } from "./portfolio";
-import { CoverTypes } from "@/constants/constants";
+import { ImageTypes } from "@/constants/constants";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
+import { Project } from "@/services/projectService";
+import { StorageService } from "@/services/imageService";
 
 interface Props {
     projects: Project[];
-    activeProjects: number[];
+    activeProjects: string[];
 }
 
 const cardVariants = {
@@ -72,10 +73,9 @@ const MasonryGrid = ({ projects, activeProjects }: Props) => {
 
         if (JSON.stringify(calculatedPositions) !== JSON.stringify(positions)) {
             setPositions(calculatedPositions);
-
-            const maxHeight = Math.max(...columnHeights);
-            setContainerHeight(maxHeight - gridGap);
         }
+        const maxHeight = Math.max(...columnHeights);
+        setContainerHeight(maxHeight - gridGap);
     }, [activeProjects, columnCount, gridGap, positions, projects]);
 
     return (
@@ -107,28 +107,35 @@ const MasonryGrid = ({ projects, activeProjects }: Props) => {
                         <motion.div
                             className="flex w-full h-full relative items-center justify-center"
                             animate={isActive ? "shown" : "hidden"}
+                            initial={"shown"}
                             variants={cardVariants}
                         >
                             <Image
-                                src={
-                                    x.coverType === CoverTypes.LANDSCAPE
-                                        ? "https://picsum.photos/1600/900"
-                                        : x.coverType === CoverTypes.PORTRAIT
-                                        ? "https://picsum.photos/900/1600"
-                                        : "https://picsum.photos/900/900"
-                                }
+                                src={StorageService.getCoverImage(x.id)}
                                 alt=""
                                 fill
                                 style={{
                                     objectFit: "cover",
                                 }}
                                 sizes="100%"
-                                className="duration-300 group-hover:scale-[101%] group-hover:blur-[2px]"
+                                className="duration-300 group-hover:scale-[102%] group-hover:blur-[2px]"
                             />
-                            <div className="flex w-full h-full absolute flex-col items-center justify-center bg-black bg-opacity-60 duration-500 opacity-0 group-hover:opacity-100">
-                                <p className="text-white">{x.id}</p>
-                                <p className="text-white">
-                                    {x.type.join(" - ")}
+                            <div
+                                className={`flex w-full h-full absolute flex-col items-center justify-center gap-1 bg-black bg-opacity-65 duration-500 opacity-0 group-hover:opacity-100 ${
+                                    x.coverType === ImageTypes.PORTRAIT
+                                        ? "pb-16"
+                                        : x.coverType === ImageTypes.LANDSCAPE
+                                        ? "pb-6"
+                                        : x.coverType === ImageTypes.SQUARE
+                                        ? "pb-8"
+                                        : ""
+                                }`}
+                            >
+                                <p className="text-white font-medium text-xl">
+                                    {x.title}
+                                </p>
+                                <p className="text-white font-light">
+                                    {x.type}
                                 </p>
                             </div>
                         </motion.div>

@@ -13,8 +13,8 @@ export default function Navbar() {
     return (
         <div className="fixed flex flex-col items-center justify-between h-screen w-64 pb-4 bg-primary">
             <div className="flex flex-col w-full items-center gap-8">
-                <div className="flex w-full justify-evenly items-center h-11 border-b-[1px] border-text">
-                    <div className="flex items-center justify-center w-2/3 h-full border-r-[1px] border-text">
+                <div className="flex w-full justify-evenly items-center h-11 border-b border-text">
+                    <div className="flex items-center justify-center w-2/3 h-full border-r border-text">
                         <LocaleButton />
                     </div>
                     <div className="flex items-center justify-center w-1/3 h-full">

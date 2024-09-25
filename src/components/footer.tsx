@@ -5,12 +5,20 @@ import ContactInfo from "../data/homePage/contact.json";
 import { Helpers } from "@/helpers/helpers";
 import { useTranslations } from "next-intl";
 
-export default function Footer() {
+interface Props {
+    long?: boolean;
+}
+
+export default function Footer({ long }: Props) {
     const t = useTranslations("Contact");
     const tC = useTranslations("Common");
 
     return (
-        <div className="flex justify-between ml-64 h-28 py-4 px-[5%] bg-secondary gap-1">
+        <div
+            className={`flex justify-between h-28 py-4 px-[5%] bg-secondary gap-1 ${
+                !long ? "ml-64" : "w-full"
+            }`}
+        >
             <p className="flex items-center text-sm">
                 Copyright © 2024&nbsp;
                 <span className="text-tertiary font-medium text-base">

@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import MasonryGrid from "./masonryGrid";
 import { useTranslations } from "next-intl";
-import { Project } from "./portfolio";
 import FilterItems from "../../../data/homePage/portfolioFilters.json";
+import { Project } from "@/services/projectService";
 
 interface Props {
     projects: Project[];
@@ -53,7 +53,7 @@ export default function MasonryGridFrame({ projects }: Props) {
                     filter === "all"
                         ? projects.map((x) => x.id)
                         : projects
-                              .filter((x) => x.type.includes(filter))
+                              .filter((x) => x.platforms.includes(filter))
                               .map((x) => x.id)
                 }
             />

@@ -5,11 +5,14 @@ import Contact from "@/components/homePage/contact/contact";
 import Portfolio from "@/components/homePage/portfolio/portfolio";
 import Welcome from "@/components/homePage/welcome";
 import Services from "@/components/homePage/services";
-import Footer from "@/components/footer";
 import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer";
+import { ProjectService } from "@/services/projectService";
 
 export default async function Home() {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const projectService = new ProjectService();
+
+    const projects = await projectService.getAll();
 
     return (
         <main className="flex flex-col">
@@ -17,7 +20,7 @@ export default async function Home() {
             <Welcome />
             <About />
             <Services />
-            <Portfolio />
+            <Portfolio projects={projects} />
             <Contact />
             <Footer />
         </main>
