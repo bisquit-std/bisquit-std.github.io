@@ -10,7 +10,7 @@ const nextConfig = {
         EMAIL_JS: process.env.EMAIL_JS || "",
     },
 
-    output: "export,
+    output: "export",
     images: {
         remotePatterns: [
             {
