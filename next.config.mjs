@@ -9,6 +9,8 @@ const nextConfig = {
         FIREBASE_CONFIG: process.env.FIREBASE_CONFIG || "",
         EMAIL_JS: process.env.EMAIL_JS || "",
     },
+
+    output: "export,
     images: {
         remotePatterns: [
             {
